@@ -59,6 +59,14 @@ type EnvoyExtensionPolicySpec struct {
 	// +kubebuilder:validation:MaxItems=16
 	// +optional
 	ExtProc []ExtProc `json:"extProc,omitempty"`
+
+	// Golang is a list of Golang extensions to be loaded by the Gateway.
+	// Order matters, as the extensions will be loaded in the order they are
+	// defined in this list.
+	//
+	// +kubebuilder:validation:MaxItems=16
+	// +optional
+	Golang []Golang `json:"golang,omitempty"`
 }
 
 //+kubebuilder:object:root=true

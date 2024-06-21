@@ -192,6 +192,9 @@ const (
 	// EnvoyFilterExtProc defines the Envoy HTTP external process filter.
 	EnvoyFilterExtProc EnvoyFilter = "envoy.filters.http.ext_proc"
 
+	// EnvoyFilterGolang defines the Envoy HTTP Golang filter.
+	EnvoyFilterGolang EnvoyFilter = "envoy.filters.http.golang"
+
 	// EnvoyFilterWasm defines the Envoy HTTP WebAssembly filter.
 	EnvoyFilterWasm EnvoyFilter = "envoy.filters.http.wasm"
 
